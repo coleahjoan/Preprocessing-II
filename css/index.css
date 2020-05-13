@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5rem;
+  padding: 2rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -188,6 +201,12 @@ img {
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 h1 {
   margin-left: 4rem;
 }
@@ -204,10 +223,24 @@ a {
   margin-right: 5rem;
   padding: 2rem;
 }
+@media (max-width: 500px) {
+  a {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .bus-section {
   border-bottom: 2px dashed #C0C0C0;
   max-width: 70%;
   margin-left: 20rem;
+}
+@media (max-width: 500px) {
+  .bus-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .content-section {
   display: flex;
@@ -244,6 +277,13 @@ img {
   padding-right: 24rem;
   padding-top: 3rem;
 }
+@media (max-width: 500px) {
+  .content-destination {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+  }
+}
 img {
   border-radius: 10px;
 }
@@ -253,6 +293,13 @@ img {
   width: 75%;
   align-content: center;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+  }
 }
 .destination {
   padding: 3rem;
