@@ -1,1 +1,317 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5rem;
+  padding: 2rem;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+h1 {
+  margin-left: 4rem;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5rem;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  a {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.bus-section {
+  border-bottom: 2px dashed #C0C0C0;
+  max-width: 70%;
+  margin-left: 20rem;
+}
+@media (max-width: 500px) {
+  .bus-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.content-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.text-content {
+  width: 35%;
+  margin-left: 12rem;
+  margin-right: 15rem;
+}
+.img-content {
+  width: 48%;
+}
+img {
+  border-radius: 10px;
+}
+.inverse-content {
+  margin-left: 30rem;
+}
+.img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+  border-top: 2px dashed #C0C0C0;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  padding-top: 3rem;
+}
+@media (max-width: 500px) {
+  .content-destination {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+  }
+}
+img {
+  border-radius: 10px;
+}
+.bottom-section {
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  width: 75%;
+  align-content: center;
+  margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+  }
+}
+.destination {
+  padding: 3rem;
+  margin: 3rem;
+}
+.btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 12px;
+  width: 20rem;
+  padding: 1rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
